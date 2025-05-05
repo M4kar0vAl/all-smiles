@@ -1,0 +1,29 @@
+@use 'helpers' as *;
+
+:root {
+    --container-width: ${rem(1300)};
+    --container-padding-x: ${rem(25)};
+
+    --color-light: #FFFFFF;
+    --color-blue: #2E3192;
+    --color-blue-alt: #1E2D78;
+    --color-light-blue: #EEF7FF;
+    --color-light-blue-alt: #CAE3F9;
+    --color-orange: #F4572E;
+    --color-pink: #FFF2F2;
+    --color-pink-alt: #FDEAEA;
+    --color-pink-alt2: #FFE1E1;
+    --color-red: #DD3333;
+    --color-red-alt: #EE2852;
+    --color-gray: #8A8A8A;
+    --color-gray-alt: #656565;
+
+    --font-family-base: 'Open Sans', sans-serif;
+    --font-family-accent: 'Catamaran, sans-serif';
+
+    --border-radius: ${rem(5)};
+
+    --button-height: ${rem(56)};
+
+    --transition-duration: 0.2s;
+}

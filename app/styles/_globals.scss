@@ -1,0 +1,64 @@
+@use 'helpers' as *;
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family-base);
+    font-size: rem(15);
+    line-height: rem(25);
+    background-color: var(--color-light);
+}
+
+main {
+    flex-grow: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-family-accent);
+    font-weight: 600;
+}
+
+h1, .h1 {
+    font-size: rem(65);
+    line-height: rem(77);
+}
+
+h2, .h2 {
+    font-size: rem(52);
+    line-height: rem(60);
+}
+
+h3, .h3 {
+    font-size: rem(42);
+    line-height: rem(47);
+}
+
+h4, .h4 {
+    font-size: rem(35);
+    line-height: rem(44);
+}
+
+h5, .h5 {
+    font-size: rem(27);
+    line-height: rem(35);
+}
+
+h6, .h6 {
+    font-size: rem(19);
+    line-height: rem(25);
+}
+
+a,
+button,
+label,
+input,
+textarea,
+select,
+svg * {
+    transition-duration: var(--transition-duration);
+}
