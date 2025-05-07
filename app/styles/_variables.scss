@@ -1,8 +1,8 @@
 @use 'helpers' as *;
 
 :root {
-    --container-width: ${rem(1300)};
-    --container-padding-x: ${rem(25)};
+    --container-width: #{rem(1300)};
+    --container-padding-x: #{rem(25)};
 
     --color-light: #FFFFFF;
     --color-blue: #2E3192;
@@ -21,9 +21,9 @@
     --font-family-base: 'Open Sans', sans-serif;
     --font-family-accent: 'Catamaran, sans-serif';
 
-    --border-radius: ${rem(5)};
+    --border-radius: #{rem(5)};
 
-    --button-height: ${rem(56)};
+    --button-height: #{rem(56)};
 
     --transition-duration: 0.2s;
 }
