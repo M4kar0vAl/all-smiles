@@ -35,6 +35,17 @@
     translate: -50% -50%;
 }
 
+@mixin abs-x-center {
+    position: absolute;
+    left: 50%;
+    translate: -50% 0;
+}
+
+@mixin abs-y-center {
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+}
 
 @mixin square($size) {
     width: $size;
