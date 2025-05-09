@@ -1,0 +1,18 @@
+@use '../helpers' as *;
+
+.navbar {
+    &__link {
+        font-weight: 600;
+        text-decoration: none;
+        letter-spacing: rem(2);
+        text-transform: uppercase;
+
+        &:visited {
+            color: currentColor;
+        }
+
+        &.active {
+            pointer-events: none;
+        }
+    }
+}

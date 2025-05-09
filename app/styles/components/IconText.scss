@@ -1,0 +1,36 @@
+@use '../helpers' as *;
+
+.icon-text {
+    display: inline-flex;
+    align-items: center;
+    column-gap: rem(15);
+
+    &::before {
+        --size: #{rem(17)};
+
+        @include square(var(--size));
+
+        content: '';
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    &--white-phone {
+        &::before {
+            background-image: url('../../assets/icons/phone_icon_white.svg');
+        }
+    }
+
+    &--white-email {
+        &::before {
+            background-image: url('../../assets/icons/email_icon_white.svg');
+        }
+    }
+
+    &--white-location {
+        &::before {
+            background-image: url('../../assets/icons/location_icon_white.svg');
+        }
+    }
+}
