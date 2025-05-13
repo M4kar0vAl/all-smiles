@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import BurgerButton from './BurgerButton'
 import IconText from './IconText'
@@ -9,8 +9,11 @@ import '../styles/components/Header.scss'
 
 const Header = () => {
     const [isOverlayActive, setIsOverlayActive] = useState(false)
-    document.documentElement.classList.toggle('is-lock', isOverlayActive)
     
+    useEffect(() => {
+        document.documentElement.classList.toggle('is-lock', isOverlayActive)
+    }, [isOverlayActive])
+
     return (
         <header className='header'>
             <div className="header__extra">
