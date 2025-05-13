@@ -9,7 +9,8 @@ import '../styles/components/Header.scss'
 
 const Header = () => {
     const [isOverlayActive, setIsOverlayActive] = useState(false)
-
+    document.documentElement.classList.toggle('is-lock', isOverlayActive)
+    
     return (
         <header className='header'>
             <div className="header__extra">
