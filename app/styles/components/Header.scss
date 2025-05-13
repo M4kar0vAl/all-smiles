@@ -107,7 +107,7 @@
             display: grid;
             grid-template-columns: 1fr auto;
             row-gap: rem(10);
-            padding-top: rem(10);
+            padding-block: rem(10);
         }
 
         @include mobile {
@@ -214,6 +214,7 @@
         padding: 1rem;
         row-gap: 2rem;
         transition-duration: var(--transition-duration);
+        z-index: 10;
 
         &.is-active {
             @include show;
