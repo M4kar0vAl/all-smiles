@@ -1,5 +1,11 @@
 @use 'helpers' as *;
 
+html {
+    &.is-lock {
+        overflow: hidden;
+    }
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -19,38 +25,39 @@ h3,
 h4,
 h5,
 h6 {
+    color: var(--color-blue-alt);
     font-family: var(--font-family-accent);
     font-weight: 600;
 }
 
 h1, .h1 {
-    font-size: rem(65);
-    line-height: rem(77);
+    @include fluid-text(65, 32);
+    line-height: 1.2;
 }
 
 h2, .h2 {
     font-size: rem(52);
-    line-height: rem(60);
+    line-height: 1.2;
 }
 
 h3, .h3 {
     font-size: rem(42);
-    line-height: rem(47);
+    line-height: 1.1;
 }
 
 h4, .h4 {
     font-size: rem(35);
-    line-height: rem(44);
+    line-height: 1.3;
 }
 
 h5, .h5 {
     font-size: rem(27);
-    line-height: rem(35);
+    line-height: 1.3;
 }
 
 h6, .h6 {
     font-size: rem(19);
-    line-height: rem(25);
+    line-height: 1.3;
 }
 
 a,
