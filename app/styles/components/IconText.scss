@@ -33,4 +33,10 @@
             background-image: url('../../assets/icons/location_icon_white.svg');
         }
     }
+
+    &--white-chat {
+        &::before {
+            background-image: url('../../assets/icons/chat_icon_white.svg');
+        }
+    }
 }

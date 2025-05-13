@@ -1,0 +1,28 @@
+@use '../helpers' as *;
+
+.chat {
+    @include flex-center;
+
+    position: fixed;
+    bottom: rem(40);
+    right: rem(20);
+    font-family: var(--font-family-segoe);
+    font-weight: 700;
+    letter-spacing: rem(0.6);
+    width: rem(107);
+    height: rem(50);
+    color: var(--color-light);
+    background-color: var(--color-red-alt);
+    border: none;
+    border-radius: 10rem;
+    padding: rem(15) rem(22);
+
+    .icon-text {
+        column-gap: rem(8);
+
+        &::before {
+            --size: #{rem(20)};
+        }
+    }
+
+}
