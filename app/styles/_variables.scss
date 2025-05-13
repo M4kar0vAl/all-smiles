@@ -13,6 +13,7 @@
     --color-pink: #FFF2F2;
     --color-pink-alt: #FDEAEA;
     --color-pink-alt2: #FFE1E1;
+    --color-pink-alt3: #FECBCB;
     --color-red: #DD3333;
     --color-red-alt: #EE2852;
     --color-gray: #8A8A8A;
@@ -26,4 +27,8 @@
     --button-height: #{rem(56)};
 
     --transition-duration: 0.2s;
+
+    @include mobile {
+        --container-padding-x: rem(10);    
+    }
 }
