@@ -1,0 +1,29 @@
+@use '../helpers' as *;
+
+.button {
+    --textColor: var(--color-light);
+    --backgroundColor: var(--color-blue);
+    
+    padding: rem(16) rem(50);
+    color: var(--textColor);
+    background-color: var(--backgroundColor);
+    border-radius: var(--border-radius);
+    height: var(--button-height);
+    text-decoration: none;
+    font-size: rem(12);
+    font-weight: 600;
+    line-height: 2;
+    letter-spacing: rem(2.4);
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    @include hover {
+        color: var(--backgroundColor);
+        background-color: var(--textColor);
+    }
+
+    &--white {
+        --textColor: var(--color-blue);
+        --backgroundColor: var(--color-light);
+    }
+}

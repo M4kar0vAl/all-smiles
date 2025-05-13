@@ -1,5 +1,7 @@
 import type { Route } from "./+types/home";
 
+import { Banner } from '../components';
+
 export function meta({ }: Route.MetaArgs) {
     return [
         { title: "All Smiles | Home" },
@@ -9,8 +11,8 @@ export function meta({ }: Route.MetaArgs) {
 export default function Home() {
     return (
         <>
-            <section>Section 1</section>
-            <section>Section 2</section>
+            <h1 className="visually-hidden">All smiles dental clinic</h1>
+            <Banner />
         </>
     );
 }
