@@ -30,6 +30,6 @@
     --transition-duration: 0.2s;
 
     @include mobile {
-        --container-padding-x: rem(10);    
+        --container-padding-x: #{rem(10)};    
     }
 }
