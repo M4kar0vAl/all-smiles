@@ -46,7 +46,8 @@ h2, .h2 {
 }
 
 h3, .h3 {
-    font-size: rem(42);
+    @include fluid-text(42, 28);
+    
     line-height: 1.1;
 }
 
