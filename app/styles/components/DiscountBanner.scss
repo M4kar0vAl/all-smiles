@@ -1,0 +1,58 @@
+@use '../helpers' as *;
+
+.discount-banner {
+    display: flex;
+    align-items: center;
+    color: var(--color-light);
+    background-color: var(--color-blue);
+    min-height: rem(214);
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 1rem;
+        flex-grow: 1;
+
+        @include tablet {
+            flex-direction: column;
+            row-gap: 1rem;
+        }
+    }
+
+    &__header {
+        @include tablet {
+            display: grid;
+            row-gap: rem(7);
+        }
+    }
+
+    &__title {
+        color: var(--color-light);
+    }
+
+    &__discount {
+        color: var(--color-orange);
+        white-space: nowrap;
+    }
+
+    &__text {
+        font-size: fluid(19, 14);
+        line-height: 1.6;
+    }
+
+    .button {
+        &--white {
+            @include hover {
+                color: var(--color-blue);
+                background-color: var(--color-pink-alt);
+            }
+
+            @include mobile-s {
+                @include flex-center;
+
+                width: 100%;
+            }
+        }
+    }
+}
