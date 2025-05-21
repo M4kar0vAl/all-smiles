@@ -105,12 +105,12 @@
             min-height: rem(280);
         }
 
-        &-image {
+        &-quote-image {
             --size: #{rem(140)};
 
             @include square(var(--size));
 
-            border-radius: 50%;
+            position: relative;
 
             @include tablet {
                 --size: #{rem(120)};
@@ -119,6 +119,25 @@
             @include mobile {
                 --size: #{rem(100)};
             }
+
+            &::after {
+                --quouteIconSize: 26%;
+
+                @include square(var(--quouteIconSize));
+
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                border-radius: rem(4);
+                background: url('../../assets/icons/quote_icon.svg') center/44% no-repeat var(--color-blue);
+            }
+        }
+
+        &-image {
+            @include square(100%);
+
+            border-radius: 50%;
         }
 
         &-body {
