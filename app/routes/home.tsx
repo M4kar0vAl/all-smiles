@@ -7,7 +7,8 @@ import {
     VideoInfo,
     Reviews,
     DiscountBanner,
-    Services
+    Services,
+    Team
 } from '../components';
 
 export function meta({ }: Route.MetaArgs) {
@@ -26,6 +27,7 @@ export default function Home() {
             <Reviews />
             <DiscountBanner />
             <Services />
+            <Team />
             <Chat />
         </>
     );

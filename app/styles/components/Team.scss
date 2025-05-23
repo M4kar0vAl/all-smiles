@@ -1,0 +1,87 @@
+@use '../helpers' as *;
+
+.team {
+    display: grid;
+    row-gap: fluid(72, 30);
+    padding-block: fluid(145, 50);
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__text {
+        text-align: center;
+    }
+
+    &__content {
+        --columns: 4;
+
+        display: grid;
+        grid-template-columns: repeat(var(--columns), 1fr);
+        gap: fluid(50, 20);
+    
+        @include laptop {
+            --columns: 2;
+        }
+
+        @include mobile {
+            --columns: 1;
+        }
+    }
+
+    &__card {
+        position: relative;
+        display: grid;
+        row-gap: fluid(10);
+        
+        &-link {
+            &::after {
+                content: '';
+                position: absolute;
+                inset: 0;
+            }
+        }
+
+        &-team-image {
+            --size: #{rem(290)};
+
+            @include square(var(--size));
+
+            position: relative;
+
+            @include tablet {
+                --size: #{rem(250)};
+            }
+
+            &::after {
+                @include square(14%);
+                
+                content: '';
+                position: absolute;
+                top: 6%;
+                left: -6%;
+                background: url('../../assets/icons/share_icon.svg') center/38% no-repeat var(--color-blue);
+                border-radius: rem(4);
+            }
+        }
+
+        &-image {
+            @include square(100%);
+        }
+
+        &-body {
+            display: grid;
+            justify-items: center;
+        
+            .subtitle {
+                position: relative;
+            }
+        }
+
+        &-title {
+            position: relative;
+        }
+    }
+}
