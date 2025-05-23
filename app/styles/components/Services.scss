@@ -1,0 +1,79 @@
+@use '../helpers' as *;
+
+.services {
+    background-color: var(--color-pink);
+    padding-block: fluid(122, 20);
+
+    &__tabs {
+        display: flex;
+        flex-direction: column;
+        row-gap: fluid(66, 20);
+
+        &-panel {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            overflow-x: auto;
+        }
+
+        &-button {
+            @include flex-center;
+
+            border: none;
+            padding: 0;
+            min-height: rem(49);
+            background-color: transparent;
+            border-bottom: rem(2) solid var(--color-pink-alt2);
+            min-width: rem(200);
+
+            @include hover {
+                background-color: var(--color-red);
+            }
+
+            &.is-active {
+                border-color: var(--color-red);
+                pointer-events: none;
+            }
+        }
+
+        &-body {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+
+            @include tablet {
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+        }
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            row-gap: rem(7);
+            max-width: rem(572);
+            color: var(--color-gray-alt);
+
+            @include tablet {
+                max-width: none;
+            }
+        }
+
+        &-subtitle {
+            font-size: fluid(19, 14);
+            line-height: 1.6;
+        }
+
+        &-image {
+            width: 41%;
+            border-radius: var(--border-radius);
+        
+            @include tablet {
+                width: 70%;
+            }
+
+            @include mobile {
+                width: 100%;
+            }
+        }
+    }
+}
