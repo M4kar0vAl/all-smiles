@@ -25,6 +25,8 @@
         }
 
         &.is-active {
+            pointer-events: none;
+
             &::before {
                 @include square(rem(14));
             }
