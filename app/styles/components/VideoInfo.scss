@@ -41,55 +41,9 @@
         background: url('../../assets/video_info/sign.png') top left/contain no-repeat;
     }
 
-    &__video {
-        @include flex-center;
-
-        position: relative;
-    
+    .video {
         @include tablet {
             order: -1;
-        }
-
-        &-element {
-            width: 100%;
-        }
-    
-        &-play-button {
-            --size: #{rem(90)};
-
-            @include abs-center;
-            @include square(var(--size));
-
-            border: rem(1) solid var(--color-light);
-            border-radius: 50%;
-            background-color: transparent;
-            padding: 0;
-
-            @include mobile {
-                --size: #{rem(70)};
-            }
-
-            &::before {
-                @include abs-center;
-                @include square(87%);
-
-                content: '';
-                background-color: var(--color-light);
-                border-radius: 50%;
-            }
-            
-            &::after {
-                @include abs-center;
-
-                content: '';
-                width: rem(20);
-                height: rem(22);
-                background: url('../../assets/icons/play_icon.svg') center/contain no-repeat;
-            }
-
-            &.is-clicked {
-                display: none;
-            }
         }
     }
 }
