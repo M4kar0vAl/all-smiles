@@ -8,13 +8,22 @@ import {
     Reviews,
     DiscountBanner,
     Services,
-    Team
+    Team,
+    Appointment
 } from '../components';
 
 export function meta({ }: Route.MetaArgs) {
     return [
         { title: "All Smiles | Home" },
     ];
+}
+
+export async function action({
+    request
+}: Route.ActionArgs) {
+    const formData = await request.formData()
+
+    // make a post request to the backend
 }
 
 export default function Home() {
@@ -28,6 +37,7 @@ export default function Home() {
             <DiscountBanner />
             <Services />
             <Team />
+            <Appointment />
             <Chat />
         </>
     );

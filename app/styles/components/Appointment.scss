@@ -1,0 +1,109 @@
+@use '../helpers' as *;
+
+.appointment {
+    display: grid;
+    grid-template-columns: 53% 1fr;
+    background-color: var(--color-light-blue);
+
+    @include tablet {
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+    }
+
+    .video {
+        clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+
+        @include tablet {
+            clip-path: none
+        }
+
+        &.is-active {
+            clip-path: none
+        }
+    }
+
+    &__content {
+        @include flex-center;
+    }
+
+    &__form {
+        display: grid;
+        row-gap: fluid(42, 15);
+        padding: 1rem;
+
+        @include laptop-above {
+            width: 71%;
+        }
+
+        @include tablet {
+            width: 80%;
+            padding-top: 0;
+        }
+
+        @include mobile {
+            width: 100%;
+        }
+
+        &-header {
+            display: grid;
+            row-gap: rem(3);
+        }
+
+        &-body {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: rem(20);
+
+            @include mobile {
+                gap: rem(10);
+            }
+
+            @include mobile-s {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .button {
+            max-width: rem(215);
+
+            @include hover {
+                background-color: var(--color-pink-alt);
+            }
+
+            @include mobile-s {
+                max-width: 100%;
+            }
+        }
+    }
+
+    &__input {
+        height: rem(50);
+        padding: rem(15) rem(22);
+        border: rem(2) solid var(--color-light-blue-alt2);
+        border-radius: rem(4);
+        background-color: transparent;
+        color: var(--color-gray);
+
+        @include mobile {
+            padding: rem(10);
+        }
+
+        &:focus-visible {
+            outline: rem(2) solid var(--color-blue);
+        }
+
+        &::placeholder {
+            color: inherit;
+        }
+
+        &--textarea {
+            resize: vertical;
+            width: 100%;
+            height: rem(98);
+
+            @include mobile-s-above {
+                grid-column: span 2;
+            }
+        }
+    }
+}
