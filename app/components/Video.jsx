@@ -4,32 +4,32 @@ import '../styles/components/Video.scss'
 
 
 const Video = ({ videoURL, posterURL, width, height }) => {
-    const [isPlayButtonClicked, setIsPlayButtonClicked] = useState(false)
+    const [isVideoActivated, setIsVideoActivated] = useState(false)
     const videoRef = useRef(null)
 
     function handlePlayButtonClick() {
-        if (isPlayButtonClicked) {
+        if (isVideoActivated) {
             return
         }
 
-        setIsPlayButtonClicked(true)
+        setIsVideoActivated(true)
         videoRef.current.play()
     }
 
     return (
-        <div className="video">
+        <div className={`video ${isVideoActivated ? 'is-active' : ''}`}>
             <video
                 className='video__element'
                 src={videoURL}
                 width={width}
                 height={height}
                 poster={posterURL}
-                controls={isPlayButtonClicked}
+                controls={isVideoActivated}
                 ref={videoRef}
             ></video>
             <button
                 onClick={handlePlayButtonClick}
-                className={`video__play-button ${isPlayButtonClicked ? 'is-clicked' : ''}`}
+                className={`video__play-button ${isVideoActivated ? 'is-clicked' : ''}`}
                 type='button'
             ></button>
         </div>
