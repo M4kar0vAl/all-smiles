@@ -1,0 +1,62 @@
+@use '../helpers' as *;
+
+.news {
+    display: grid;
+    row-gap: fluid(64, 20);
+    padding-block: fluid(145, 50);
+
+    &__header {
+        display: grid;
+        justify-items: center;
+    }
+
+    &__text {
+        text-align: center;
+    }
+
+    &__content {
+        --columns: 3;
+
+        display: grid;
+        grid-template-columns: repeat(var(--columns), 1fr);
+        gap: fluid(30, 20);
+
+        @include tablet {
+            --columns: 1;
+
+            width: 100%;
+            justify-items: center;
+        }
+    }
+
+    &__card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        row-gap: fluid(18, 10);
+        
+        @include mobile-above {
+            max-width: rem(414);
+        }
+
+        @include mobile {
+            width: 100%;
+        }
+
+        &-image {
+            border-radius: var(--border-radius);
+            width: 100%;
+        }
+
+        &-body {
+            display: grid;
+            row-gap: rem(7);
+            flex-grow: 1;
+        }
+
+        .read-more-link {
+            margin-top: auto;
+            align-self: start;
+        }
+    }
+}

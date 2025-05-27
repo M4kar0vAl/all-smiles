@@ -9,7 +9,8 @@ import {
     DiscountBanner,
     Services,
     Team,
-    Appointment
+    Appointment,
+    News,
 } from '../components';
 
 export function meta({ }: Route.MetaArgs) {
@@ -38,6 +39,7 @@ export default function Home() {
             <Services />
             <Team />
             <Appointment />
+            <News />
             <Chat />
         </>
     );
