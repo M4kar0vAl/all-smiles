@@ -11,6 +11,7 @@ import {
     Team,
     Appointment,
     News,
+    Partners,
 } from '../components';
 
 export function meta({ }: Route.MetaArgs) {
@@ -40,6 +41,7 @@ export default function Home() {
             <Team />
             <Appointment />
             <News />
+            <Partners />
             <Chat />
         </>
     );

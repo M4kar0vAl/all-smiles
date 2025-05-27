@@ -1,0 +1,29 @@
+@use '../helpers' as *;
+
+.partners {
+    background-color: var(--color-pink);
+    padding-block: fluid(65, 30);
+
+    &__list {
+        --columns: 6;
+
+        display: grid;
+        grid-template-columns: repeat(var(--columns), auto);
+        justify-content: space-around;
+        gap: rem(30);
+
+        @include tablet {
+            --columns: 3;
+        }
+
+        @include mobile {
+            --columns: 2;
+
+            padding-inline: rem(10);
+        }
+    }
+
+    &__item {
+        width: max-content;
+    }
+}
