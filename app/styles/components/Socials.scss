@@ -1,0 +1,20 @@
+@use '../helpers' as *;
+
+.soc1als {
+    display: flex;
+    column-gap: rem(10);
+    
+    &-item {
+        --size: #{rem(39)};
+
+        @include square(var(--size));
+        @include flex-center;
+
+        background-color: var(--color-light);
+        border-radius: rem(4);
+
+        @include hover {
+            background-color: var(--color-pink-alt);
+        }
+    }
+}
