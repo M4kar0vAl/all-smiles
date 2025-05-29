@@ -1,6 +1,8 @@
 @use '../helpers' as *;
 
 .read-more-link {
+    @include link-hover;
+
     display: flex;
     align-items: center;
     column-gap: rem(10);
@@ -11,12 +13,6 @@
     text-transform: uppercase;
     letter-spacing: rem(2.4);
     color: var(--color-blue-alt);
-
-    @include hover {
-        text-decoration: underline;
-        text-underline-offset: rem(5);
-        text-decoration-thickness: rem(2);
-    }
 
     &::after {
         --size: #{rem(36)};

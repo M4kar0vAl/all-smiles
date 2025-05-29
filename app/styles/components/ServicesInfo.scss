@@ -79,6 +79,7 @@
     &__call-us-link {
         @include fluid-text(20, 16);
         @include flex-center;
+        @include link-hover;
 
         width: 100%;
         height: fluid(81, 60);
@@ -89,11 +90,6 @@
         line-height: 1.25;
         border-radius: 0 0 var(--border-radius) var(--border-radius);
         text-decoration: none;
-
-        @include hover {
-            text-decoration: underline;
-            text-underline-offset: rem(5);
-        }
     }
 
     &__overview {

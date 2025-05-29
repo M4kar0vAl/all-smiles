@@ -137,6 +137,8 @@
         }
 
         &-button {
+            @include link-hover;
+
             background-color: transparent;
             border: none;
             padding: 0;
@@ -144,12 +146,6 @@
             font-weight: 600;
             letter-spacing: rem(2);
             text-transform: uppercase;
-
-            @include hover {
-                text-decoration: underline;
-                text-underline-offset: rem(5);
-                text-decoration-thickness: rem(2);
-            }
         }
     }
 
@@ -217,14 +213,16 @@
             }
     
             .navbar__link {
+                @include link-hover;
+
                 @include hover {
-                    text-decoration: underline var(--color-red) rem(2);
-                    text-underline-offset: rem(5);
+                    text-decoration-color: var(--color-red);
                 }
 
                 &.active {
-                    text-decoration: underline var(--color-red) rem(2);
-                    text-underline-offset: rem(5);
+                    @include underline;
+
+                    text-decoration-color: var(--color-red);
                 }
             }
         }

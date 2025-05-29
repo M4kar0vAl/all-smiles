@@ -41,14 +41,10 @@
     }
 
     &-link {
+        @include link-hover;
+
         color: var(--color-light);
         text-decoration: none;
-
-        @include hover {
-            text-decoration: underline;
-            text-underline-offset: rem(5);
-            text-decoration-thickness: rem(2);
-        }
     }
 
     &-address {
