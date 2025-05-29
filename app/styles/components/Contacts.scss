@@ -1,0 +1,73 @@
+@use '../helpers' as *;
+
+.contacts {
+    --columnGap: #{rem(48)};
+
+    display: flex;
+    align-items: center;
+    column-gap: var(--columnGap);
+
+    @include tablet {
+        --columnGap: #{rem(20)};
+    }
+
+    @include mobile {
+        flex-direction: column;
+        row-gap: rem(10);
+        align-items: start;
+    }
+    
+    &:not(.contacts--alt) > *:not(:last-child) {
+        position: relative;
+
+        &::after {
+            @include square(rem(2));
+            @include abs-y-center;
+
+            content: '';
+            border-radius: 50%;
+            background-color: currentColor;
+            right: calc(var(--columnGap) / 2 * -1);
+
+            @include mobile {
+                @include hide;
+            }
+        }
+    }
+
+    &-phones {
+        display: flex;
+        align-items: center;
+    }
+
+    &-link {
+        color: var(--color-light);
+        text-decoration: none;
+
+        @include hover {
+            text-decoration: underline;
+            text-underline-offset: rem(5);
+            text-decoration-thickness: rem(2);
+        }
+    }
+
+    &-address {
+        display: inline-flex;
+    }
+    
+    &--alt {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        row-gap: fluid(25, 10);
+        
+        .contacts {
+            &-phones,
+            &-address {
+                display: grid;
+                justify-items: start;
+                align-items: start;
+            }
+        }
+    }
+}
