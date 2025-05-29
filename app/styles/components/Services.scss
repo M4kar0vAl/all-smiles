@@ -27,6 +27,7 @@
 
             @include hover {
                 background-color: var(--color-red);
+                border-color: var(--color-red);
             }
 
             &.is-active {
