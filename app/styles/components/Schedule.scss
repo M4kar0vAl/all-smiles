@@ -7,6 +7,42 @@
     background-color: var(--color-pink-alt2);
     border-radius: var(--border-radius) var(--border-radius) 0 0;
 
+    &--alt {
+        color: var(--color-light);
+        padding: 0;
+        row-gap: rem(10);
+        background-color: transparent;
+        border-radius: 0;
+
+        .schedule {
+            &__title {
+                justify-self: start;
+                color: currentColor;
+
+                @include mobile {
+                    justify-self: center;
+                }
+            }
+            
+            &__list {
+                row-gap: fluid(12, 5);
+            }
+
+            &__item {
+                color: currentColor;
+                column-gap: rem(5);
+            }
+            
+            &__key {
+                flex-grow: 0;
+
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+
     &__title {
         justify-self: center;
     }
