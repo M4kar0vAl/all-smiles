@@ -27,12 +27,12 @@
         flex-direction: column;
         row-gap: rem(17);
 
+        @include tablet {
+            align-items: center;
+        }
+
         &--has-logo {
             row-gap: fluid(40, 20);
-
-            @include mobile {
-                align-items: center;
-            }
         }
 
         &-title {
