@@ -1,0 +1,57 @@
+@use '../helpers' as *;
+
+.footer {
+    color: var(--color-light);
+    background-color: var(--color-blue-alt2);
+
+    &__main {
+        --columns: 4;
+
+        display: grid;
+        grid-template-columns: repeat(var(--columns), 1fr);
+        padding-block: fluid(145, 20) fluid(117, 20);
+        gap: fluid(32, 20);
+
+        @include tablet {
+            --columns: 2;
+        }
+
+        @include mobile {
+            --columns: 1;
+            justify-items: center;
+        }
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(17);
+
+        &--has-logo {
+            row-gap: fluid(40, 20);
+
+            @include mobile {
+                align-items: center;
+            }
+        }
+
+        &-title {
+            color: var(--color-light);
+
+            @include mobile {
+                align-self: center;
+            }
+        }
+    }
+
+    &__location-image {
+        width: 100%;
+        border-radius: rem(4);
+    }
+
+    &__extra {
+        background-color: var(--color-blue-alt3);
+        text-align: center;
+        padding: rem(10);
+    }
+}
