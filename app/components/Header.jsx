@@ -1,9 +1,6 @@
 import { useEffect, useState } from 'react'
 
-import BurgerButton from './BurgerButton'
-import IconText from './IconText'
-import Logo from './Logo'
-import Navbar from './Navbar'
+import { BurgerButton, Logo, Navbar, Contacts } from '.'
 
 import '../styles/components/Header.scss'
 
@@ -21,17 +18,7 @@ const Header = () => {
                     <span className='header__schedule-brace'>&#125;</span>
                     <span>Mon - Sat <time dateTime="8:00">8:00</time> <time dateTime="17:30">17:30</time>, Sunday - CLOSED</span>
                 </div>
-                <address className='header__contacts'>
-                    <a href="tel:+6544715167" className='header__contacts-link'>
-                        <IconText text='+654/4715-167' modifier='white-phone' />
-                    </a>
-                    <a href="mailto:allsmiles@qodeinteractive.com" className='header__contacts-link'>
-                        <IconText text='allsmiles@qodeinteractive.com' modifier='white-email' />
-                    </a>
-                    <span className='header__contacts-address'>
-                        <IconText text='63 Wall St, New York, NY 10005' modifier='white-location' />
-                    </span>
-                </address>
+                <Contacts />
             </div>
             <div className="header__body">
                 <Logo className='header__logo' />

@@ -40,56 +40,6 @@
         }
     }
 
-    &__contacts {
-        --columnGap: #{rem(48)};
-
-        display: flex;
-        align-items: center;
-        column-gap: var(--columnGap);
-
-        @include tablet {
-            --columnGap: #{rem(20)};
-        }
-
-        @include mobile {
-            flex-direction: column;
-            row-gap: rem(10);
-            align-items: start;
-        }
-
-        > *:not(:last-child) {
-            position: relative;
-
-            &::after {
-                @include square(rem(2));
-                @include abs-y-center;
-
-                content: '';
-                border-radius: 50%;
-                background-color: currentColor;
-                right: calc(var(--columnGap) / 2 * -1);
-
-                @include mobile {
-                    @include hide;
-                }
-            }
-        }
-
-        &-link {
-            color: var(--color-light);
-            text-decoration: none;
-
-            @include hover {
-                text-decoration: underline;
-                text-underline-offset: rem(5);
-            }
-        }
-
-        &-address {
-            display: inline-flex;
-        }
-    }
-
     &__body {
         min-height: rem(100);
         display: flex;
