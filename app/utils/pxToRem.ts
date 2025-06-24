@@ -1,4 +1,4 @@
-const pxToRem = (pixels) => {
+const pxToRem = (pixels: number) => {
   return pixels / 16
 }
 

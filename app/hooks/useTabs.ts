@@ -1,6 +1,6 @@
 import { useSlider } from '.'
 
-function useTabs(tabsData) {
+function useTabs<T>(tabsData: T[]) {
     return useSlider(tabsData, 1)
 }
 

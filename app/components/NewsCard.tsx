@@ -1,6 +1,11 @@
+import type { newsDataObj } from './News'
 import { Subtitle, ReadMoreLink } from '.'
 
-const NewsCard = ({ data }) => {
+type PropTypes = {
+    data: newsDataObj,
+}
+
+const NewsCard = ({ data }: PropTypes) => {
     return (
         <article className='news__card'>
             <img

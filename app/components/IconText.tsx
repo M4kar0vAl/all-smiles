@@ -1,6 +1,11 @@
 import '../styles/components/IconText.scss'
 
-const IconText = ({text, modifier}) => {
+type PropTypes = {
+    text: string,
+    modifier?: string,
+}
+
+const IconText = ({text, modifier}: PropTypes) => {
     return (
         <span className={`icon-text icon-text--${modifier}`}>{text}</span>
     )

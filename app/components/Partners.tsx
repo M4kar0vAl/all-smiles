@@ -6,7 +6,13 @@ import image5 from '../assets/partners/partners5.svg'
 import image6 from '../assets/partners/partners6.svg'
 import '../styles/components/Partners.scss'
 
-const partnersList = [
+type partner = {
+    id: number,
+    link: string,
+    imageURL: string,
+}
+
+const partnersList: partner[] = [
     {
         id: 1,
         link: "https://example.com",

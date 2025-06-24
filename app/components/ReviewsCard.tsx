@@ -1,7 +1,11 @@
 import { Subtitle } from "."
+import type { reviewObj } from "./Reviews"
 
+type PropTypes = {
+    data: reviewObj,
+}
 
-const ReviewsCard = ({ data }) => {
+const ReviewsCard = ({ data }: PropTypes) => {
     return (
         <div className="reviews__card">
             <div className="reviews__card-quote-image">

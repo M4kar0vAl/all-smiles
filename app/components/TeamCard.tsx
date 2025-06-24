@@ -1,8 +1,13 @@
 import { Link } from 'react-router'
 
 import { Subtitle } from '.'
+import type { teamObj } from './Team'
 
-const TeamCard = ({ data }) => {
+type PropTypes = {
+    data: teamObj,
+}
+
+const TeamCard = ({ data }: PropTypes) => {
     return (
         <div className='team__card'>
             <Link to='/staff' className='team__card-link'>

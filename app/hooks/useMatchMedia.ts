@@ -4,7 +4,7 @@ import pxToRem from '../utils/pxToRem'
 import { resolutions } from '../utils/constants'
 
 function useMatchMedia() {
-    const [matchMedia, setMatchMedia] = useState(null)
+    const [matchMedia, setMatchMedia] = useState<{ [key: string]: MediaQueryList } | null>(null)
 
     useEffect(() => {
         setMatchMedia({

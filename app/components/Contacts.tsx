@@ -2,7 +2,11 @@ import { IconText } from '.'
 
 import '../styles/components/Contacts.scss'
 
-const Contacts = ({ isAlt = false }) => {
+type PropTypes = {
+    isAlt?: boolean,
+}
+
+const Contacts = ({ isAlt = false }: PropTypes) => {
     return (
         <address className={`contacts ${isAlt ? 'contacts--alt' : ''}`}>
             <div className='contacts-phones'>

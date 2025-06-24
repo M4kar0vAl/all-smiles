@@ -6,7 +6,14 @@ import image3 from '../assets/team/team3.jpg'
 import image4 from '../assets/team/team4.jpg'
 import '../styles/components/Team.scss'
 
-const teamData = [
+export interface teamObj {
+    id: number,
+    title: string,
+    subtitle: string,
+    image: string,
+}
+
+const teamData: teamObj[] = [
     {
         id: 1,
         title: 'Howard Holmes',

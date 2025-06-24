@@ -5,7 +5,7 @@ import { BurgerButton, Logo, Navbar, Contacts } from '.'
 import '../styles/components/Header.scss'
 
 const Header = () => {
-    const [isOverlayActive, setIsOverlayActive] = useState(false)
+    const [isOverlayActive, setIsOverlayActive] = useState<boolean>(false)
     
     useEffect(() => {
         document.documentElement.classList.toggle('is-lock', isOverlayActive)
@@ -21,7 +21,7 @@ const Header = () => {
                 <Contacts />
             </div>
             <div className="header__body">
-                <Logo className='header__logo' />
+                <Logo />
                 <Navbar />
                 <div className="header__actions">
                     <button className='header__actions-button'>

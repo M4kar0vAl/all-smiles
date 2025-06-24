@@ -1,6 +1,10 @@
 import '../styles/components/Schedule.scss'
 
-const Schedule = ({ isAlt }) => {
+type PropTypes = {
+    isAlt?: boolean,
+}
+
+const Schedule = ({ isAlt = false }: PropTypes) => {
     return (
         <div className={`schedule ${isAlt ? 'schedule--alt' : ''}`}>
             <h3 className={`schedule__title ${isAlt ? 'h6' : 'h4'}`}>Work{isAlt ? '' : 'ing'} Hours</h3>

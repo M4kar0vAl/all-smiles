@@ -1,13 +1,23 @@
-import {useSlider} from "../hooks"
+import React from "react"
+
+import { useSlider } from "../hooks"
 
 import Button from './Button'
-import {Pagination} from '.'
-import {BannerSlide} from '.'
+import { Pagination } from '.'
+import { BannerSlide } from '.'
 
 import banner3 from '../assets/banner/banner3.jpg'
 import '../styles/components/Banner.scss'
 
-const bannerSlidesData = [
+export interface slideData {
+    id: number,
+    title: React.JSX.Element,
+    subtitle: string,
+    actions: React.JSX.Element,
+    backgroundImage: string,
+}
+
+const bannerSlidesData: slideData[] = [
     {
         id: 1,
         title: (
@@ -87,10 +97,10 @@ const Banner = () => {
         setPage,
     } = useSlider(bannerSlidesData, 1)
 
-    const {backgroundImage} = currentData[0]
+    const { backgroundImage } = currentData[0]
 
     return (
-        <section className="banner" style={{background: `url(${backgroundImage}) center/cover no-repeat`}}>
+        <section className="banner" style={{ background: `url(${backgroundImage}) center/cover no-repeat` }}>
             <div className="banner__body">
                 <button
                     className="banner__slide-button banner__slide-button--prev"
@@ -99,7 +109,7 @@ const Banner = () => {
                 ></button>
                 <div className="banner__slide-list container">
                     {
-                        currentData.map(slideData => 
+                        currentData.map(slideData =>
                             <BannerSlide
                                 slideData={slideData}
                                 isActive={true}
@@ -114,7 +124,7 @@ const Banner = () => {
                     onClick={nextPage}
                 ></button>
             </div>
-            <Pagination length={bannerSlidesData.length} activePage={currentPage} onClick={setPage}/>
+            <Pagination length={bannerSlidesData.length} activePage={currentPage} onClick={setPage} />
         </section>
     )
 }

@@ -1,6 +1,10 @@
 import '../styles/components/Subtitle.scss'
 
-const Subtitle = ({ text }) => {
+type PropTypes = {
+    text: string,
+}
+
+const Subtitle = ({ text }: PropTypes) => {
     return (
         <p className="subtitle">{text}</p>
     )

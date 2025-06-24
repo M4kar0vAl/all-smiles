@@ -1,6 +1,13 @@
+import type React from 'react'
 import '../styles/components/Pagination.scss'
 
-const Pagination = ({ length, activePage = 1, onClick }) => {
+type PropTypes = {
+    length: number,
+    activePage?: number,
+    onClick: (page: number, event?: React.PointerEvent<HTMLButtonElement>) => void
+}
+
+const Pagination = ({ length, activePage = 1, onClick }: PropTypes) => {
     const buttons = []
     
     for (let index = 0; index < length; index++) {

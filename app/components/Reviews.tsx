@@ -8,7 +8,15 @@ import authorImg2 from '../assets/reviews/reviews_author2.jpg'
 import authorImg3 from '../assets/reviews/reviews_author3.jpg'
 import '../styles/components/Reviews.scss'
 
-const reviewsData = [
+export interface reviewObj {
+    id: number,
+    excerpt: string,
+    text: string,
+    author: string,
+    image: string,
+}
+
+const reviewsData: reviewObj[] = [
     {
         id: 1,
         excerpt: 'Quick, easy & reliable',
@@ -75,7 +83,7 @@ const reviewsData = [
 ]
 
 const Reviews = () => {
-    const [perPage, setPerPage] = useState(3)
+    const [perPage, setPerPage] = useState<number>(3)
 
     const {
         currentData,
@@ -109,19 +117,19 @@ const Reviews = () => {
         }
     }, [matchMedia])
 
-    function handleTabletAboveResolution(event) {
+    function handleTabletAboveResolution(event: MediaQueryListEvent): void {
         if (event.matches) {
             setPerPage(3)
         }
     }
 
-    function handleTabletResolution(event) {
+    function handleTabletResolution(event: MediaQueryListEvent): void {
         if (event.matches) {
             setPerPage(2)
         }
     }
-    
-    function handleMobileResolution(event) {
+
+    function handleMobileResolution(event: MediaQueryListEvent): void {
         if (event.matches) {
             setPerPage(1)
         }

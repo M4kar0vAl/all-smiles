@@ -5,7 +5,15 @@ import image2 from '../assets/news/news2.jpg'
 import image3 from '../assets/news/news3.jpg'
 import '../styles/components/News.scss'
 
-const newsData = [
+export interface newsDataObj {
+    id: number,
+    title: string,
+    subtitle: string,
+    text: string,
+    image: string,
+}
+
+const newsData: newsDataObj[] = [
     {
         id: 1,
         title: 'All about invisalign',

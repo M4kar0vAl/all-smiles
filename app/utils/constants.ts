@@ -3,4 +3,4 @@ export const resolutions = {
     tablet: 1100.98,
     mobile: 630.98,
     mobileS: 470.98,
-}
+} as const

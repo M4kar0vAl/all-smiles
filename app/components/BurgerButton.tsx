@@ -1,6 +1,11 @@
+import type React from 'react'
 import '../styles/components/BurgerButton.scss'
 
-const BurgerButton = ({ onClick }) => {
+type PropTypes = {
+    onClick: (event: React.PointerEvent<HTMLButtonElement>) => void
+}
+
+const BurgerButton = ({ onClick }: PropTypes) => {
     return (
         <button className='burger-button' onClick={onClick}>
             <span className='burger-button__line'></span>

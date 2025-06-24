@@ -3,7 +3,16 @@ import { useTabs } from '../hooks'
 import image1 from '../assets/services/services1.jpg'
 import '../styles/components/Services.scss'
 
-const tabsData = [
+type tabsObj = {
+    id: number,
+    buttonText: string,
+    title: string,
+    subtitle: string,
+    text: string,
+    image: string,
+}
+
+const tabsData: tabsObj[] = [
     {
         id: 1,
         buttonText: 'Root Canal Specialist',

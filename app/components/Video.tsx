@@ -2,10 +2,16 @@ import { useRef, useState } from "react"
 
 import '../styles/components/Video.scss'
 
+type PropTypes = {
+    videoURL: string,
+    posterURL: string,
+    width: number,
+    height: number,
+}
 
-const Video = ({ videoURL, posterURL, width, height }) => {
-    const [isVideoActivated, setIsVideoActivated] = useState(false)
-    const videoRef = useRef(null)
+const Video = ({ videoURL, posterURL, width, height }: PropTypes) => {
+    const [isVideoActivated, setIsVideoActivated] = useState<boolean>(false)
+    const videoRef = useRef<HTMLVideoElement>(null)
 
     function handlePlayButtonClick() {
         if (isVideoActivated) {
@@ -13,7 +19,7 @@ const Video = ({ videoURL, posterURL, width, height }) => {
         }
 
         setIsVideoActivated(true)
-        videoRef.current.play()
+        videoRef.current?.play()
     }
 
     return (

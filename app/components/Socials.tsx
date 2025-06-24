@@ -3,7 +3,13 @@ import twitterIcon from '../assets/socials/twitter_icon.svg'
 import facebookIcon from '../assets/socials/facebook_icon.svg'
 import '../styles/components/Socials.scss'
 
-const socials = [
+type socialObj = {
+    id: number,
+    link: string,
+    image: string,
+}
+
+const socials: socialObj[] = [
     {
         id: 1,
         link: 'https://example.com',
@@ -24,8 +30,8 @@ const socials = [
 const Socials = () => {
     return (
         <ul className='soc1als'>
-            {
-                socials.map(data => 
+            {socials.map(
+                data => 
                     <li className="soc1als-item" key={data.id}>
                         <a
                             className='soc1als-link'
@@ -39,8 +45,7 @@ const Socials = () => {
                             />
                         </a>
                     </li>
-                )
-            }
+            )}
         </ul>
     )
 }

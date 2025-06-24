@@ -2,7 +2,13 @@ import { Link } from 'react-router'
 
 import '../styles/components/Button.scss'
 
-const Button = ({ to='', modifier, children }) => {
+type PropTypes = {
+    to?: string,
+    modifier?: string,
+    children: React.ReactNode,
+}
+
+const Button = ({ to='', modifier, children }: PropTypes) => {
     return (
         <>
             {

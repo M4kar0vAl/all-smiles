@@ -4,7 +4,11 @@ import logo from '../assets/logo.svg'
 import logoAlt from '../assets/logo-alt.png'
 import '../styles/components/Logo.scss'
 
-const Logo = ({ isAlt = false }) => {
+type PropTypes = {
+    isAlt?: boolean
+}
+
+const Logo = ({ isAlt = false }: PropTypes) => {
     return (
         <Link to="/" className='logo' >
             <img
