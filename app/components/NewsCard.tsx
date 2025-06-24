@@ -1,5 +1,5 @@
-import type { newsDataObj } from './News'
-import { Subtitle, ReadMoreLink } from '.'
+import type { newsDataObj } from '@components/News'
+import { Subtitle, ReadMoreLink } from '@components/.'
 
 type PropTypes = {
     data: newsDataObj,

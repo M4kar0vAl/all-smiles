@@ -1,7 +1,7 @@
-import { Logo, Schedule, Socials, Contacts } from '.'
+import { Logo, Schedule, Socials, Contacts } from '@components/.'
 
-import locationImg from '../assets/footer/footer_location.jpg'
-import '../styles/components/Footer.scss'
+import locationImg from '@assets/footer/footer_location.jpg'
+import '@styles/components/Footer.scss'
 
 const Footer = () => {
     return (

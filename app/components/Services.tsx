@@ -1,7 +1,7 @@
-import { useTabs } from '../hooks'
+import { useTabs } from '@/hooks'
 
-import image1 from '../assets/services/services1.jpg'
-import '../styles/components/Services.scss'
+import image1 from '@assets/services/services1.jpg'
+import '@styles/components/Services.scss'
 
 type tabsObj = {
     id: number,

@@ -1,6 +1,6 @@
 import { useRef, useState } from "react"
 
-import '../styles/components/Video.scss'
+import '@styles/components/Video.scss'
 
 type PropTypes = {
     videoURL: string,

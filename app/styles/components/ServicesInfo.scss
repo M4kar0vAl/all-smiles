@@ -1,4 +1,4 @@
-@use '../helpers' as *;
+@use '@styles/helpers' as *;
 
 .services-info {
     padding-block: fluid(150, 50);
@@ -62,7 +62,7 @@
                 content: '';
                 width: rem(30);
                 height: rem(11);
-                background: url('../../assets/icons/list_style_plus_icon.svg') center/contain no-repeat;
+                background: url('@assets/icons/list_style_plus_icon.svg') center/contain no-repeat;
             }
         }
 

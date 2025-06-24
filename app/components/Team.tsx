@@ -1,10 +1,10 @@
-import { Subtitle, TeamCard } from '.'
+import { Subtitle, TeamCard } from '@components/.'
 
-import image1 from '../assets/team/team1.jpg'
-import image2 from '../assets/team/team2.jpg'
-import image3 from '../assets/team/team3.jpg'
-import image4 from '../assets/team/team4.jpg'
-import '../styles/components/Team.scss'
+import image1 from '@assets/team/team1.jpg'
+import image2 from '@assets/team/team2.jpg'
+import image3 from '@assets/team/team3.jpg'
+import image4 from '@assets/team/team4.jpg'
+import '@styles/components/Team.scss'
 
 export interface teamObj {
     id: number,

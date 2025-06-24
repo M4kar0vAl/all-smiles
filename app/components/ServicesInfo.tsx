@@ -1,15 +1,15 @@
-import ReadMoreLink from './ReadMoreLink'
-import Schedule from './Schedule'
+import ReadMoreLink from '@components/ReadMoreLink'
+import Schedule from '@components/Schedule'
 
-import cardImg1 from '../assets/services-info/services-info1.jpg'
-import cardImg2 from '../assets/services-info/services-info2.jpg'
-import overviewImg1 from '../assets/services-info/services-overview1.svg'
-import overviewImg2 from '../assets/services-info/services-overview2.svg'
-import overviewImg3 from '../assets/services-info/services-overview3.svg'
-import overviewImg4 from '../assets/services-info/services-overview4.svg'
-import overviewImg5 from '../assets/services-info/services-overview5.svg'
-import overviewImg6 from '../assets/services-info/services-overview6.svg'
-import '../styles/components/ServicesInfo.scss'
+import cardImg1 from '@assets/services-info/services-info1.jpg'
+import cardImg2 from '@assets/services-info/services-info2.jpg'
+import overviewImg1 from '@assets/services-info/services-overview1.svg'
+import overviewImg2 from '@assets/services-info/services-overview2.svg'
+import overviewImg3 from '@assets/services-info/services-overview3.svg'
+import overviewImg4 from '@assets/services-info/services-overview4.svg'
+import overviewImg5 from '@assets/services-info/services-overview5.svg'
+import overviewImg6 from '@assets/services-info/services-overview6.svg'
+import '@styles/components/ServicesInfo.scss'
 
 const Info = () => {
     return (

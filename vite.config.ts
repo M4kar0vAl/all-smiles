@@ -5,4 +5,12 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
   plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
+  resolve: {
+    alias: {
+      '@': '/app',
+      '@components': '/app/components/',
+      '@styles': '/app/styles',
+      '@assets': '/app/assets',
+    }
+  }
 });

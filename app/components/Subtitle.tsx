@@ -1,4 +1,4 @@
-import '../styles/components/Subtitle.scss'
+import '@styles/components/Subtitle.scss'
 
 type PropTypes = {
     text: string,

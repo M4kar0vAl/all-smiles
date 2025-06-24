@@ -1,10 +1,10 @@
-import image1 from '../assets/partners/partners1.svg'
-import image2 from '../assets/partners/partners2.svg'
-import image3 from '../assets/partners/partners3.svg'
-import image4 from '../assets/partners/partners4.svg'
-import image5 from '../assets/partners/partners5.svg'
-import image6 from '../assets/partners/partners6.svg'
-import '../styles/components/Partners.scss'
+import image1 from '@assets/partners/partners1.svg'
+import image2 from '@assets/partners/partners2.svg'
+import image3 from '@assets/partners/partners3.svg'
+import image4 from '@assets/partners/partners4.svg'
+import image5 from '@assets/partners/partners5.svg'
+import image6 from '@assets/partners/partners6.svg'
+import '@styles/components/Partners.scss'
 
 type partner = {
     id: number,

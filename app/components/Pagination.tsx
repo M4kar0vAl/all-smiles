@@ -1,5 +1,5 @@
 import type React from 'react'
-import '../styles/components/Pagination.scss'
+import '@styles/components/Pagination.scss'
 
 type PropTypes = {
     length: number,

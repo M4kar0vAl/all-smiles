@@ -1,4 +1,4 @@
-import '../styles/components/Schedule.scss'
+import '@styles/components/Schedule.scss'
 
 type PropTypes = {
     isAlt?: boolean,

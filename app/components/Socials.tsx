@@ -1,7 +1,7 @@
-import linkedInIcon from '../assets/socials/linked_in_icon.svg'
-import twitterIcon from '../assets/socials/twitter_icon.svg'
-import facebookIcon from '../assets/socials/facebook_icon.svg'
-import '../styles/components/Socials.scss'
+import linkedInIcon from '@assets/socials/linked_in_icon.svg'
+import twitterIcon from '@assets/socials/twitter_icon.svg'
+import facebookIcon from '@assets/socials/facebook_icon.svg'
+import '@styles/components/Socials.scss'
 
 type socialObj = {
     id: number,

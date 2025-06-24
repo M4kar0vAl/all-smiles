@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 
-import { BurgerButton, Logo, Navbar, Contacts } from '.'
+import { BurgerButton, Logo, Navbar, Contacts } from '@components/.'
 
-import '../styles/components/Header.scss'
+import '@styles/components/Header.scss'
 
 const Header = () => {
     const [isOverlayActive, setIsOverlayActive] = useState<boolean>(false)

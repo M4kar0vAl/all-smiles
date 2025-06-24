@@ -1,7 +1,7 @@
 import { Link } from 'react-router'
 
-import { Subtitle } from '.'
-import type { teamObj } from './Team'
+import { Subtitle } from '@components/.'
+import type { teamObj } from '@components/Team'
 
 type PropTypes = {
     data: teamObj,

@@ -1,13 +1,12 @@
 import React from "react"
 
-import { useSlider } from "../hooks"
+import { useSlider } from "@/hooks"
 
-import Button from './Button'
-import { Pagination } from '.'
-import { BannerSlide } from '.'
+import Button from '@components/Button'
+import { Pagination, BannerSlide } from '@components/.'
 
-import banner3 from '../assets/banner/banner3.jpg'
-import '../styles/components/Banner.scss'
+import banner3 from '@assets/banner/banner3.jpg'
+import '@styles/components/Banner.scss'
 
 export interface slideData {
     id: number,

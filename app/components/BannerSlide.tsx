@@ -1,4 +1,4 @@
-import type { slideData } from "./Banner"
+import type { slideData } from "@components/Banner"
 
 type PropTypes = {
     slideData: slideData,

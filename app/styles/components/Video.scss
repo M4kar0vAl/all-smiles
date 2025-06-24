@@ -1,4 +1,4 @@
-@use '../helpers' as *;
+@use '@styles/helpers' as *;
 
 .video {
     @include flex-center;
@@ -39,7 +39,7 @@
             content: '';
             width: rem(20);
             height: rem(22);
-            background: url('../../assets/icons/play_icon.svg') center/contain no-repeat;
+            background: url('@assets/icons/play_icon.svg') center/contain no-repeat;
         }
 
         &.is-clicked {

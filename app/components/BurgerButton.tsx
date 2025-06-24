@@ -1,5 +1,5 @@
 import type React from 'react'
-import '../styles/components/BurgerButton.scss'
+import '@styles/components/BurgerButton.scss'
 
 type PropTypes = {
     onClick: (event: React.PointerEvent<HTMLButtonElement>) => void

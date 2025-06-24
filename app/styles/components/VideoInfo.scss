@@ -1,4 +1,4 @@
-@use '../helpers' as *;
+@use '@styles/helpers' as *;
 
 .video-info {
     display: grid;
@@ -38,7 +38,7 @@
         line-height: 1.7;
         padding-top: calc(var(--height) * 0.23);
         color: var(--color-orange);
-        background: url('../../assets/video_info/sign.png') top left/contain no-repeat;
+        background: url('@assets/video_info/sign.png') top left/contain no-repeat;
     }
 
     .video {

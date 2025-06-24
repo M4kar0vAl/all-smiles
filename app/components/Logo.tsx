@@ -1,8 +1,8 @@
 import { Link } from "react-router"
 
-import logo from '../assets/logo.svg'
-import logoAlt from '../assets/logo-alt.png'
-import '../styles/components/Logo.scss'
+import logo from '@assets/logo.svg'
+import logoAlt from '@assets/logo-alt.png'
+import '@styles/components/Logo.scss'
 
 type PropTypes = {
     isAlt?: boolean

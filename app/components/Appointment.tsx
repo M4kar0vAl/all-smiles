@@ -1,9 +1,9 @@
 import { Form } from 'react-router'
-import { Video, Button } from '.'
+import { Video, Button } from '@components/.'
 
-import poster from '../assets/appointment/appointment_poster.jpg'
-import video from '../assets/appointment/sample_640x360.mp4'
-import '../styles/components/Appointment.scss'
+import poster from '@assets/appointment/appointment_poster.jpg'
+import video from '@assets/appointment/sample_640x360.mp4'
+import '@styles/components/Appointment.scss'
 
 const Appointment = () => {
     return (

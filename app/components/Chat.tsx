@@ -1,11 +1,11 @@
-import {IconText} from '.'
+import { IconText } from '@components/.'
 
-import '../styles/components/Chat.scss'
+import '@styles/components/Chat.scss'
 
 const Chat = () => {
     return (
         <button className="chat" type='button'>
-            <IconText text='Chat' modifier='white-chat'/>
+            <IconText text='Chat' modifier='white-chat' />
         </button>
     )
 }

@@ -1,4 +1,4 @@
-@use '../helpers' as *;
+@use '@styles/helpers' as *;
 
 .banner {
     min-height: rem(650);
@@ -94,7 +94,7 @@
                 @include square(100%);
 
                 content: '';
-                background: url('../../assets/icons/arrow_left_blue.svg') center/contain no-repeat;
+                background: url('@assets/icons/arrow_left_blue.svg') center/contain no-repeat;
             }
 
             &--next {

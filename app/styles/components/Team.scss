@@ -1,4 +1,4 @@
-@use '../helpers' as *;
+@use '@styles/helpers' as *;
 
 .team {
     display: grid;
@@ -62,7 +62,7 @@
                 position: absolute;
                 top: 6%;
                 left: -6%;
-                background: url('../../assets/icons/share_icon.svg') center/38% no-repeat var(--color-blue);
+                background: url('@assets/icons/share_icon.svg') center/38% no-repeat var(--color-blue);
                 border-radius: rem(4);
             }
         }

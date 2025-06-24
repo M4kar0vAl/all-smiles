@@ -1,9 +1,9 @@
-import { Subtitle, NewsCard } from '.'
+import { Subtitle, NewsCard } from '@components/.'
 
-import image1 from '../assets/news/news1.jpg'
-import image2 from '../assets/news/news2.jpg'
-import image3 from '../assets/news/news3.jpg'
-import '../styles/components/News.scss'
+import image1 from '@assets/news/news1.jpg'
+import image2 from '@assets/news/news2.jpg'
+import image3 from '@assets/news/news3.jpg'
+import '@styles/components/News.scss'
 
 export interface newsDataObj {
     id: number,

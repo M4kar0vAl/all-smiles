@@ -1,6 +1,6 @@
 import { Link } from "react-router"
 
-import '../styles/components/ReadMoreLink.scss'
+import '@styles/components/ReadMoreLink.scss'
 
 type PropTypes = {
     to: string,

@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
 
-import { Pagination, Subtitle, ReviewsCard } from '.'
-import { useSlider, useMatchMedia } from '../hooks'
+import { Pagination, Subtitle, ReviewsCard } from '@components/.'
+import { useSlider, useMatchMedia } from '@/hooks'
 
-import authorImg1 from '../assets/reviews/reviews_author1.jpg'
-import authorImg2 from '../assets/reviews/reviews_author2.jpg'
-import authorImg3 from '../assets/reviews/reviews_author3.jpg'
-import '../styles/components/Reviews.scss'
+import authorImg1 from '@assets/reviews/reviews_author1.jpg'
+import authorImg2 from '@assets/reviews/reviews_author2.jpg'
+import authorImg3 from '@assets/reviews/reviews_author3.jpg'
+import '@styles/components/Reviews.scss'
 
 export interface reviewObj {
     id: number,

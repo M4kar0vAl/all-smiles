@@ -1,4 +1,4 @@
-@use '../helpers' as *;
+@use '@styles/helpers' as *;
 
 .icon-text {
     display: inline-flex;
@@ -18,25 +18,25 @@
 
     &--white-phone {
         &::before {
-            background-image: url('../../assets/icons/phone_icon_white.svg');
+            background-image: url('@assets/icons/phone_icon_white.svg');
         }
     }
 
     &--white-email {
         &::before {
-            background-image: url('../../assets/icons/email_icon_white.svg');
+            background-image: url('@assets/icons/email_icon_white.svg');
         }
     }
 
     &--white-location {
         &::before {
-            background-image: url('../../assets/icons/location_icon_white.svg');
+            background-image: url('@assets/icons/location_icon_white.svg');
         }
     }
 
     &--white-chat {
         &::before {
-            background-image: url('../../assets/icons/chat_icon_white.svg');
+            background-image: url('@assets/icons/chat_icon_white.svg');
         }
     }
 }

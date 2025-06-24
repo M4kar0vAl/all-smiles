@@ -1,6 +1,6 @@
-import { Button } from '.'
+import { Button } from '@components/.'
 
-import '../styles/components/DiscountBanner.scss'
+import '@styles/components/DiscountBanner.scss'
 
 const DiscountBanner = () => {
     return (

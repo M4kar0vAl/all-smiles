@@ -1,5 +1,5 @@
-import { Subtitle } from "."
-import type { reviewObj } from "./Reviews"
+import { Subtitle } from "@components/."
+import type { reviewObj } from "@components/Reviews"
 
 type PropTypes = {
     data: reviewObj,

@@ -1,6 +1,6 @@
 import { Link } from 'react-router'
 
-import '../styles/components/Button.scss'
+import '@styles/components/Button.scss'
 
 type PropTypes = {
     to?: string,

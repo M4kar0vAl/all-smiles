@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
-import pxToRem from '../utils/pxToRem'
-import { resolutions } from '../utils/constants'
+import pxToRem from '@/utils/pxToRem'
+import { resolutions } from '@/utils/constants'
 
 function useMatchMedia() {
     const [matchMedia, setMatchMedia] = useState<{ [key: string]: MediaQueryList } | null>(null)

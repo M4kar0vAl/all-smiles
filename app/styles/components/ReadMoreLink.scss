@@ -1,4 +1,4 @@
-@use '../helpers' as *;
+@use '@styles/helpers' as *;
 
 .read-more-link {
     @include link-hover;
@@ -21,6 +21,6 @@
 
         content: '';
         border-radius: 50%;
-        background: url('../../assets/icons/read_more_icon.svg') center/contain no-repeat;
+        background: url('@assets/icons/read_more_icon.svg') center/contain no-repeat;
     }
 }

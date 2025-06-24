@@ -12,7 +12,7 @@ import {
     Appointment,
     News,
     Partners,
-} from '../components';
+} from '@components/.';
 
 export function meta({ }: Route.MetaArgs) {
     return [

@@ -1,4 +1,4 @@
-@use '../helpers' as *;
+@use '@styles/helpers' as *;
 
 .reviews {
     padding-block: fluid(140, 50);
@@ -67,7 +67,7 @@
                 content: '';
                 width: rem(11);
                 height: rem(17);
-                background: url('../../assets/icons/arrow_left_blue.svg') center/contain no-repeat;
+                background: url('@assets/icons/arrow_left_blue.svg') center/contain no-repeat;
             }
 
             &--prev {
@@ -130,7 +130,7 @@
                 top: 0;
                 right: 0;
                 border-radius: rem(4);
-                background: url('../../assets/icons/quote_icon.svg') center/44% no-repeat var(--color-blue);
+                background: url('@assets/icons/quote_icon.svg') center/44% no-repeat var(--color-blue);
             }
         }
 

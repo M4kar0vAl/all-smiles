@@ -1,4 +1,4 @@
-import '../styles/components/IconText.scss'
+import '@styles/components/IconText.scss'
 
 type PropTypes = {
     text: string,

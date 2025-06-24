@@ -1,8 +1,8 @@
-import { Subtitle, Video } from '.'
+import { Subtitle, Video } from '@components/.'
 
-import poster from '../assets/video_info/poster.jpg'
-import video from '../assets/video_info/sample_640x360.mp4'
-import '../styles/components/VideoInfo.scss'
+import poster from '@assets/video_info/poster.jpg'
+import video from '@assets/video_info/sample_640x360.mp4'
+import '@styles/components/VideoInfo.scss'
 
 const VideoInfo = () => {
     return (

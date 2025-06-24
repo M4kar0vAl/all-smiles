@@ -1,6 +1,6 @@
-import { IconText } from '.'
+import { IconText } from '@components/.'
 
-import '../styles/components/Contacts.scss'
+import '@styles/components/Contacts.scss'
 
 type PropTypes = {
     isAlt?: boolean,
